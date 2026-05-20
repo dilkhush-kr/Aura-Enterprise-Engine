@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Desktop Dashboard](./public/dashboard-desktop.png)
 
-## Getting Started
+🔗 Live Website: 
 
-First, run the development server:
+Aura Engine — Enterprise Inventory Dashboard
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+A modern and responsive enterprise inventory management dashboard built using Next.js, React.js, Tailwind CSS, and Recharts.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project simulates a real backend-powered admin dashboard architecture using mock inventory data and API routes.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🚀 Features
+✅ Responsive Enterprise Layout
+Desktop fixed sidebar
+Mobile responsive navbar
+Hamburger sidebar menu
+Smooth mobile sidebar animation
+Professional admin dashboard UI
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+✅ Inventory Management System
+Dynamic inventory product table
+SKU management
+Product category management
+Stock tracking
+Price management
 
-## Learn More
+✅ Advanced Filtering System
+Product search
+Category dropdown filter
+Stock level slider filter
+Minimum price filter
+Maximum price filter
+Price sorting
 
-To learn more about Next.js, take a look at the following resources:
+✅ Server-Side Pagination
+Backend-style pagination
+Loads only 50 products at a time
+Dynamic page navigation
+Previous / Next pagination controls
+Example API Requests
+/api/products?page=1&limit=50
+/api/products?page=2&limit=50
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✅ Analytics Dashboard
+📊 Risk Assessment Chart
+Built using Recharts Bar Chart
+Displays Top 10 lowest-stock products
+Dynamically connected to inventory data
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🥧 Portfolio Distribution Chart
+Built using Recharts Pie Chart
+Shows inventory valuation percentage by category
+Example Calculation
+category inventory value =
+sum(price × stock)
 
-## Deploy on Vercel
+📈 Dynamic KPI Cards
+Total SKUs
+Total Inventory Value
+Out of Stock Products
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+All KPI cards dynamically update from inventory data.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+✅ CSV Export
+Export inventory data into CSV format
+Downloadable reporting support
+
+✅ Loading Skeletons
+Smooth loading animations
+Professional user experience
+
+🛠 Tech Stack
+Technology	Usage
+Next.js 16	Frontend Framework
+React.js	UI Development
+Tailwind CSS	Styling
+Axios	API Requests
+Recharts	Analytics Charts
+
+📁 Folder Structure
+src/
+│
+├── app/
+│   ├── api/
+│   │   └── products/
+│   │       └── route.js
+│   │
+│   ├── globals.css
+│   ├── layout.js
+│   └── page.js
+│
+├── components/
+│   ├── dashboard/
+│   ├── layout/
+│   └── table/
+│
+├── data/
+│   └── products.js
+
+⚙️ Backend Simulation Architecture
+
+This project simulates a real enterprise frontend-backend workflow.
+
+products.js
+   ↓
+route.js API
+   ↓
+Axios API requests
+   ↓
+Dashboard + Table + Charts
+Explanation
+products.js acts as a mock database
+route.js acts as backend API
+Frontend communicates using Axios requests
+
+✅ Server-Side Pagination Verification
+
+Pagination functionality can be verified using:
+
+Browser DevTools
+Network Tab
+Fetch/XHR requests
+
+Only 50 records are loaded per request, simulating real backend pagination behavior.
+
+📌 Future Improvements
+Authentication System
+Dark Mode
+Product CRUD Operations
+Database Integration
+Role-Based Access Control
+Backend Deployment
+
+
