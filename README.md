@@ -1,6 +1,6 @@
 ![Desktop Dashboard](./public/dashboard-desktop.png)
 
-🔗 Live Website: 
+🔗 Live Website: https://aura-enterprise-engine-mauve.vercel.app/
 
 Aura Engine — Enterprise Inventory Dashboard
 
